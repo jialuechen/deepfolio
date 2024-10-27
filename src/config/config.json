@@ -1,0 +1,18 @@
+{
+    "risk": {
+        "maxOrderAmount": 1000000,
+        "maxPosition": 5000000,
+        "maxDailyLoss": 50000
+    },
+    "logging": {
+        "level": 2  // 0=INFO, 1=WARNING, 2=ERROR, 3=DEBUG
+    },
+    "connection": {
+        "host": "example.fixserver.com",
+        "port": "5000",
+        "heartbeatInterval": 30
+    },
+    "rateLimiter": {
+        "maxOrdersPerMinute": 60
+    }
+}
