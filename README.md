@@ -1,6 +1,6 @@
 # OpenLPA
 
-**OpenLPA** (Open-source Liquidity Provision Analytics) is a Python library for analyzing the behavior and quality of liquidity providers (LPs) in electronic trading. Inspired by institutional platforms such as BidFX LPA, this project empowers traders, quants, and researchers with tools to evaluate LP behavior, optimize routing decisions, and support transaction cost analysis (TCA).
+**OpenLPA** (Open-source Liquidity Provision Analytics) is a Python library for analyzing the behavior and quality of liquidity providers (LPs) in electronic trading. Inspired by institutional solutions, this project empowers traders, quants, and researchers with tools to evaluate LP behavior, optimize routing decisions, and support transaction cost analysis (TCA).
 
 ---
 
@@ -49,7 +49,7 @@ By integrating microstructure behavior modeling, causal inference, and adaptive 
 ## 📦 Installation
 
 ```bash
-pip install openlpa
+pip install --upgrade openlpa
 ```
 
 ---
