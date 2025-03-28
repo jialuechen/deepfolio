@@ -1,6 +1,6 @@
 # CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
-project(ThunderFix)
+project(OpenLPA)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -13,7 +13,7 @@ file(GLOB EXTENSIONS_SRC ${CMAKE_SOURCE_DIR}/src/extensions/*.cpp)
 file(GLOB UTIL_SRC ${CMAKE_SOURCE_DIR}/src/util/*.cpp)
 
 # Library target
-add_library(ThunderFix ${CORE_SRC} ${EXTENSIONS_SRC} ${UTIL_SRC})
+add_library(OpenLPA ${CORE_SRC} ${EXTENSIONS_SRC} ${UTIL_SRC})
 
 # Tests
 enable_testing()
@@ -21,7 +21,7 @@ add_subdirectory(tests)
 
 # Examples
 add_executable(BasicUsageExample examples/BasicUsageExample.cpp)
-target_link_libraries(BasicUsageExample ThunderFix)
+target_link_libraries(BasicUsageExample OpenLPA)
 
 add_executable(AdvancedUsageExample examples/AdvancedUsageExample.cpp)
-target_link_libraries(AdvancedUsageExample ThunderFix)
+target_link_libraries(AdvancedUsageExample OpenLPA)
