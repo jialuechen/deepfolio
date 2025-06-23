@@ -1,1 +1,0 @@
-def compute_response_latency(...): pass
