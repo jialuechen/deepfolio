@@ -1,19 +1,19 @@
 # DeepFolio
 
-An attention-driven portfolio optimization library leveraging deep learning and modern machine learning techniques for advanced asset allocation and risk management.
+DeepFolio is an attention-driven portfolio optimization library that leverages deep learning and modern machine learning techniques for advanced asset allocation and risk management.
 
 ---
 
 ## Features
 
-- Flexible data pipeline (resampling, feature engineering)
-- Portfolio Transformer model for allocation
-- Multiple loss functions: Sharpe ratio, CVaR, and more
-- Cost models: Linear, Almgren-Chriss transaction cost
-- Portfolio constraints: Gross exposure, leverage cap, etc.
-- Scenario augmentation and Monte Carlo simulation
-- Integrated backtesting and performance monitoring
-- Auto re-training and hyperparameter tuning
+- **Flexible data pipeline**: Resampling, feature engineering, and custom hooks
+- **Portfolio Transformer model**: Attention-based allocation for multiple assets
+- **Multiple loss functions**: Sharpe ratio, CVaR, and more
+- **Cost models**: Linear, Almgren-Chriss transaction cost modeling
+- **Portfolio constraints**: Gross exposure, leverage cap, and more
+- **Scenario augmentation**: Monte Carlo simulation and scenario generation
+- **Integrated backtesting**: Performance monitoring and evaluation
+- **Auto re-training & hyperparameter tuning**
 
 ---
 
