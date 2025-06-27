@@ -28,12 +28,26 @@ pip install deepfolio
 ```python
 from deepfolio import Pipeline, PortfolioTransformer, MultiLossTrainer, Backtester
 
+# 1. Data loading and preprocessing
 pipe = Pipeline(hooks=[Pipeline.pct_return])
-prices = pipe.load('prices.csv')
-returns = prices.values
+prices = pipe.load('prices.csv')  # Load your price data (CSV with datetime index and asset columns)
+returns = prices.values           # Convert to numpy array
 
+# 2. Build the model
 model = PortfolioTransformer(n_assets=returns.shape[1])
-# ... etc
+
+# 3. Train the model with multiple objectives (e.g., maximize Sharpe, minimize CVaR)
+trainer = MultiLossTrainer(model=model, losses=['sharpe', 'cvar'])
+trainer.fit(returns, epochs=100, batch_size=32)
+
+# 4. Generate portfolio weights for new data
+weights = model.predict(returns[-20:])  # Predict weights for the last 20 periods
+
+# 5. Backtest the strategy
+backtester = Backtester(model)
+results = backtester.run(returns)
+
+# 6. Analyze results
 ```
 
 ## License
