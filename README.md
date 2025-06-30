@@ -1,6 +1,8 @@
 # DeepFolio
 
-DeepFolio is an attention-driven portfolio optimization library that leverages deep learning and modern machine learning techniques for advanced asset allocation and risk management.
+DeepFolio is a Quadratic Programming-based Python library for large-scale portfolio optimization.
+
+It implements a unified QP framework with an efficient OSQP-ADMM solver (featuring sparse LDL caching and warm starts), and provides full support for real-world constraints such as long/short limits, turnover bounds, and factor neutrality. DeepFolio pioneers ℓ₁+ℓ₂² regularization on mapped factor weights and integrates cutting-edge covariance estimators (AP-Trees, IPCA, RP-PCA, etc.), enabling single-core, high-precision optimization for portfolios with hundreds of assets across multiple rolling-window backtests.
 
 ---
 
